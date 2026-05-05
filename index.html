@@ -6,20 +6,31 @@
 <title>Landing Page</title>
 
 <style>
-    body {
+    * {
         margin: 0;
         padding: 0;
-        background-color: black;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        background: black;
         font-family: Arial, sans-serif;
         color: white;
+
+        /* PERFECT CENTER */
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 
     .container {
-        padding: 40px 20px;
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
     }
 
-    /* Profile Image */
     .profile-img {
         width: 120px;
         height: 120px;
@@ -30,59 +41,57 @@
 
     h1 {
         margin-top: 15px;
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .bold-line {
-        font-weight: bold;
         margin-top: 10px;
         font-size: 18px;
+        font-weight: bold;
     }
 
     .normal-line {
-        margin-top: 8px;
-        font-size: 16px;
+        margin-top: 6px;
+        font-size: 15px;
         color: #ccc;
     }
 
-    /* Download Button */
     .download-btn {
         display: inline-block;
         margin-top: 25px;
-        padding: 15px 30px;
+        padding: 16px 35px;
         font-size: 20px;
         font-weight: bold;
         color: white;
         background: linear-gradient(45deg, #00c6ff, #0072ff);
         border-radius: 50px;
         text-decoration: none;
-        box-shadow: 0 0 15px rgba(0, 114, 255, 0.8);
+        box-shadow: 0 0 20px rgba(0, 114, 255, 0.9);
         transition: 0.3s;
     }
 
     .download-btn:hover {
-        transform: scale(1.05);
+        transform: scale(1.07);
     }
 
-    /* Highlight Box */
+    /* BOX (Button ke neeche) */
     .highlight-box {
-        margin-top: 30px;
-        padding: 15px;
-        background: rgba(255,255,255,0.1);
+        margin-top: 15px;
+        padding: 12px;
+        background: rgba(255,255,255,0.08);
         border-radius: 10px;
-        display: inline-block;
+        font-size: 14px;
     }
 
     .custom-line {
-        margin-top: 30px;
+        margin-top: 20px;
         font-size: 14px;
         color: #aaa;
     }
 
-    /* Footer Link */
     .footer {
-        margin-top: 20px;
-        font-size: 14px;
+        margin-top: 15px;
+        font-size: 13px;
     }
 
     .footer a {
@@ -97,39 +106,35 @@
 
 <div class="container">
 
-    <!-- 🔴 यहाँ अपनी JPG फोटो का लिंक डालना -->
-    <img src="your-image.jpg" alt="Profile" class="profile-img">
+    <!-- 🔴 IMAGE -->
+    <img src="your-image.jpg" class="profile-img">
 
-    <!-- 🔴 यहाँ अपना नाम लिखना -->
+    <!-- 🔴 NAME -->
     <h1>Your Name</h1>
 
-    <!-- 🔴 Bold लाइन -->
-    <div class="bold-line">यहाँ आपका मोटा टेक्स्ट आएगा</div>
+    <!-- 🔴 TEXT -->
+    <div class="bold-line">यहाँ आपका मोटा टेक्स्ट</div>
+    <div class="normal-line">यहाँ आपका नॉर्मल टेक्स्ट</div>
 
-    <!-- 🔴 Normal लाइन -->
-    <div class="normal-line">यहाँ आपका नॉर्मल टेक्स्ट आएगा</div>
-
-    <!-- 🔴 Download Button -->
-    <!-- यहाँ लिंक डालना -->
-    <a href="YOUR-DOWNLOAD-LINK" class="download-btn" download>
+    <!-- 🔴 BUTTON -->
+    <a href="YOUR-DOWNLOAD-LINK" class="download-btn">
         ⬇️ DOWNLOAD NOW ⬇️
     </a>
 
-    <!-- Highlight Section -->
+    <!-- 🔴 BUTTON KE DIRECT NEECHE BOX -->
     <div class="highlight-box">
         🔒 100% Secure <br>
         ⚡ Instant Result | Fast Payout
     </div>
 
-    <!-- Custom Line -->
+    <!-- 🔴 CUSTOM LINE -->
     <div class="custom-line">
         यहाँ आप अपनी लाइन लिख सकते हैं
     </div>
 
-    <!-- Footer -->
+    <!-- 🔴 FOOTER -->
     <div class="footer">
         Advertised by 
-        <!-- 🔴 यहाँ क्लिक करने पर दूसरा पेज खुलेगा -->
         <a href="https://example.com" target="_blank">Seven</a>
     </div>
 
